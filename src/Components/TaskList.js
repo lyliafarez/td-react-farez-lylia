@@ -65,7 +65,7 @@ function TaskList({ tasks }) {
       <div className="my-4 flex flex-col gap-3">
         {filtered_items.map((item, index) => {
           return (
-            <div data-cy="task-item" className="" key={index}>
+            <div  className="" key={index}>
               <button
                 className="px-2 py-1 rounded-md w-full"
                 style={{
@@ -74,9 +74,9 @@ function TaskList({ tasks }) {
                 onClick={(e) => {
                   updateState(index);
                 }}
+                data-cy="task-item"
               >
-                {" "}
-                {item.name}
+                {item.text}
               </button>
             </div>
           );

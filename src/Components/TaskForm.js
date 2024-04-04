@@ -12,7 +12,7 @@ function TaskForm({}) {
   };
   const addItem = () => {
     if (input.length > 0) {
-      let new_list = items.concat({ name: input, completed: false });
+      let new_list = items.concat({ text: input, completed: false });
       setItems(new_list);
       setInput("");
     }
