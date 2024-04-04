@@ -65,9 +65,9 @@ function TaskList({ tasks }) {
       <div className="my-4 flex flex-col gap-3">
         {filtered_items.map((item, index) => {
           return (
-            <div  className="" key={index}>
+            <div className="" key={index}>
               <button
-                className="px-2 py-1 rounded-md w-full"
+                className="px-2 py-1 rounded-md w-full completed"
                 style={{
                   backgroundColor: item.completed === true ? "green" : "red",
                 }}
